@@ -1,7 +1,7 @@
-from  gpt4all import GPT4ALL
+from  gpt4all import GPT4All
 import pandas as pd
 
-model = GPT4ALL(model_name = 'ggml-model_q4_1.bin', model_path = ('.'), allow_download=False)
+model = GPT4All(model_name = 'ggml-model_q4_1.bin', model_path = ('.'), allow_download=False)
 
 def get_response(prompt):
     response = model.generate(prompt=prompt, max_tokens=200)
